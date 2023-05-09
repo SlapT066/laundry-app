@@ -13,7 +13,7 @@
 }
 
 
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ header {
     user-select: none;
 }
 
-.navigation a {
+.navigation a , .header-about {
     position: relative;
     font-size: 1.1em;
     color: white;
@@ -304,4 +304,16 @@ header {
 }
 .register-link {
     color: rgb(40, 40, 204);
+}
+#header-about{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+
 }

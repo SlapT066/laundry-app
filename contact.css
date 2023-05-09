@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+   
+    min-height:100vh;
+    background: url(/pexels-ekaterina-belinskaya-4700383.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}

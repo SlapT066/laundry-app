@@ -65,10 +65,11 @@ window.onload = () => {
     createUserWithEmailAndPassword (auth, semail.value, spassword.value)
         .then((userCredential) => {
         
-         console.log("Success")
+          alert("Successfully Registered, you can now log in to your account.😊!")
+         
         })
         .catch((error) => {
-          console.log("An error has occured")
+          alert("An error has occured try to register again. Email format is incorrect😢!!!")
         });
   }
 
@@ -76,6 +77,7 @@ window.onload = () => {
     e.preventDefault()
 
     register()
+    window.location.assign()
 
   })
 
@@ -91,20 +93,13 @@ window.onload = () => {
       // Sign up with email and password
       Test()
             
-      emailError.innerText = "Valid"
+      emailError.innerText = "Email Valid"
       emailError.style.color = "green"
+      window.location.assign("home.html");
     }
   })
 
-  var icon = document.getElementById("icon");
-  icon.onclick = function(){ 
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-      icon.src = "images/sun.png";
-    } else {
-      icon.src = "images/moon.png";
-    }
-  }
+
 }
 
 
